@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.body
+		{
+			/*background-image:url("https://unsplash.com/photos/bJjsKbToY34.jpg");*/
+  
+  background-color: #cccccc;
+  eight: 100%;
+  background-position:bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  osition: relative;
+  background-size: 45% 78%;
+
+  
+		}
+		.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button {
+  background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+  border: none;
+  color: white;
+  width: 50%;
+
+  padding: 3% 4%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5vw;
+  margin: .8% 15%;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  height: 5%;
+}
+#maindiv{
+	border: solid 0px;
+	width: 28%;
+	height: 20%;
+	margin-top: 4%;
+}
+h1
+{
+	font-size: 3.2vw;
+	text-align: center;
+}
+	</style>
+</head>
+<body class ="body" background="nordwood-themes-bJjsKbToY34-unsplash.jpg">
+	<h1 > Test Your Typing Skills </h1>
+	<div id = "maindiv">
+<button class="button button2" onclick="window.location.href='C_TypinG.html';" >~ ! @ # $ %</button><br>
+<button class="button button2" onclick="window.location.href='C_TypinG.html';" > & * ( )</button><br>
+<button class="button button2" onclick="window.location.href='C_TypinG.html';" > ` ~ - _ = +</button><br>
+<button class="button button2" onclick="window.location.href='C_TypinG.html';" > [ { ] } \ |</button><br>
+<button class="button button2" onclick="window.location.href='C_TypinG.html';" > ; : ' "</button><br>
+<button class="button button2" onclick="window.location.href='C_TypinG.html';" > < > / ?</button><br>
+<button class="button button2" onclick="closeWin()" > Exit</button><br>
+</div>
+<footer style="float: right;">
+  <p> :Sushil Prajapati</p>
+</footer>
+</body>
+<script>
+//var myWindow;
+
+//function openWin() {
+//  myWindow = window.open("file:///home/sushil/javascript/C_TypinG.html");
+
+//} 
+
+function closeWin() {
+ //setTimeout (window.close, 2000); 
+ //var win = window.open('', '_self');
+   //    win.close();
+  var t=confirm("Are you sure");
+  if(t==true)
+  {
+  	//setTimeout (window.close, 2000); 
+  	//window.close();
+  	var win = window.open('', '_self');
+  	 win.close();
+  }
+}
+</script>
+</html>

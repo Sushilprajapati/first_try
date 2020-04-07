@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Test Your Typing Skill</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+			
+		}
+		.body
+		{
+			background: radial-gradient(circle, rgba(128,135,139,1) 100%, rgba(108,115,194,1) 100%);
+		}
+
+		#maindiv
+		{
+			
+			position: relative;
+			margin-top: 20px;
+			width: 99%;
+			height: 590px;
+		}
+		#maindiv2
+		{
+			text-align:justify;
+			margin-top: -504px;
+			width:65%;
+			height:56%;
+			margin-left:1%;
+			
+			border-radius: 4%;
+			font-size: 2.1vw;
+
+		}
+		#maindiv3
+		{
+			margin-top: 10px;
+			width:65%;
+			height:40%;
+			margin-left:  0.7%;
+			border:solid 1%;
+		}
+		.texttype
+			{
+				margin-top: 5px;
+				border:solid 7px gray;
+				font-size: 2.1vw;
+				width: 96%;
+				height: 200px;
+				ackground-color: black;
+				olor: white;
+				border-radius: 2%;
+				
+
+			}
+			.texttype:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+		.sbuttun 
+		{
+			 background-color: lightgreen; /* Green */
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  border-radius: 10%;
+}
+	#mainsidediv
+	{
+		loat: right;
+		ext-align: center;
+		height: 85%;
+		width: 32%;
+		margin-top: 1%;
+		margin-left: 67%;
+		argin-right:10px;
+		color: red;
+	}
+	#sidediv1
+	{
+		height:48%;
+		adding:6px;
+		color:blue; 
+		margin: 1% 1% 1% 3%;
+	}
+ 	.indiv
+ 	{
+ 		
+ 		margin: 2% 1% 1% 3%;
+ 		height: 49%;
+ 		
+ 		color:red;
+ 	}
+ 	.mainh1
+ 	{
+ 		font-size: 2.5vw;
+ 	}
+ 	.heidng2
+ 	{
+ 		font-size: 1.8vw;
+ 	}
+ 	.heidng3
+ 	{
+ 		font-size: 1.8vw;
+ 	}
+
+		}
+	</style>
+</head>
+<body class = "body">
+	<center>
+	<h1> Test Your Typing Skill </h1>
+</center>
+	<div id = "maindiv" style="border:solid 0px ;">
+		<div id ="mainsidediv"  style="border:solid 1px ;"> 
+			<div id = "sidediv1" style="border:solid 0px ;"><h1 class="mainh1" style="text-align: center;"> Result</h1>  <br>  <h2 class="heidng2" id = "h3speed" ></h2> 
+				<br><h2  class="heidng2" id = "h3time" ></h2> <br> 
+				<h2  class="heidng2" id = "h3accuracy" ></h2> <br> <br>
+				<h3 class="heidng3" id = "wish" style="text-align: center" ></h3>
+				</div> <hr> 
+			 <div id = " sidediv2" class = "indiv" style="border:solid 0px ;"> 
+			 	<h1 class="mainh1" style="text-align: center;"> Error </h1>
+			 	<h2 class="heidng2" id = "wordh3"> </h2> <br>
+			  <h2 class="heidng2" id ="errorh" >  </h2> <br> 
+			  <h2  class="heidng2" id ="correcth" > </h2> <br> <br>
+				<h3 class="heidng3" id = "advice" style="text-align: center" ></h3></div> 
+			   </div>
+		<div id = "maindiv2" style="border:solid 0px; "> Hello my name is Sushil Prajapati</div>
+
+		<div id = "maindiv3" style="border:solid 0px red;">
+			<center>
+		<textarea   id = "typearea" class = "texttype"  onclick ="Textfun()" onmouseout="Textfun2()">Type Here....</textarea>
+	</br>
+		
+		<!--<button id="demo" class="sbuttun" onclick="myFunction()">  Start  </button> </center> -->
+	</div>
+	<footer style="float: right;">
+  <p> :Sushil Prajapati</p>
+</footer>
+	</div>
+
+<script type="text/javascript">
+
+	var textarray = ["Step 1 − Choose the highest index value has pivot Step 2 − Take two variables to point left and right of the list excluding pivot Step 3 − left points to the low index Step 4 − right points to the high Step 5 − while value at left is less than pivot move right Step 6 − while value at right is greater than pivot move left Step 7 − if both step 5 and step 6 does not match swap left and right Step 8 − if left ≥ right, the point where they met is new pivot", "function partitionFunc(left, right, pivot)leftPointer = left rightPointer = right - 1 while True do while A[++leftPointer] < pivot end while while rightPointer > 0 && A[--rightPointer] > pivot do end while if leftPointer >= rightPointer break else swap leftPointer,rightPointer end if end while swap leftPointer,right return leftPointer end function","The most courageous act is still to think for yourself. ","What would you do if you were not afraid?","Nothing will work unless you do." ,"procedure bubbleSort( list : array of items )loop = list.count;for i = 0 to loop-1 do: swapped = false for j = 0 to loop-1 do: if list[j] > list[j+1] then swap( list[j], list[j+1] ) swapped = true end if end forif(not swapped) then brea end if end for end procedure return list","function partitionFunc(left, right, pivot leftPointer = leftrightPointer = right - 1 while True do while A[++leftPointer] < pivot do end while while rightPointer > 0 && A[--rightPointer] > pivot do end while if leftPointer >= rightPointer break else swap leftPointer,rightPointer end if end while swap leftPointer,rightreturn leftPointer end function.","One does not discover new lands without consenting to lose sight of the shore for a very long time.","surround yourself with only people who are going to lift you higher.","Sweating the details is more important than anything else.","You shouldn’t blindly accept a leader’s advice. You’ve got to question leaders on occasion.","Your time is limited, so don’t waste it living someone else’s life.","Never give up. Today is hard, tomorrow will be worse, but the day after tomorrow will be sunshine.","Define success on your own terms, achieve it by your own rules, and build a life you’re proud to live.","Someone’s sitting in the shade today because someone planted a tree a long time ago.","You cannot believe in god until you believe in yourself.","The greatest sin is to think that you are weak.","In one word, this ideal is that you are divine.","You are the soul, free and eternal, ever free, ever blessed. Have faith enough and you will be free in a minute.","Take risks in your life, If you win, you can lead! If you loose, you can guide!","We are ever free if we would only believe it, only have faith enough.","The power of concentration is the only key to the treasure-house of knowledge.","Arise, awake and stop not till the goal is reached.","Believe in yourself and the world will be at your feet.","Have faith in yourselves, great convictions are the mothers of great deeds.","A few heart-whole, sincere, and energetic men and women can do more in a year than a mob in a century.","Learning and wisdom are superfluities, the surface glitter merely, but it is the heart that is the seat of all power.","Be a here. Always say, I have no fear. Tell this to everyone – Have no fear.","Talk to yourself once in a day.. otherwise you may miss meeting an excellent person in this world."];
+
+	var trandom = Math.ceil(Math.random(1,29)*10);
+	var trandom1= Math.ceil(Math.random(1,29)*10);
+	var trandom2= Math.ceil(Math.random(1,29)*10);
+	var trandom4= Math.ceil(Math.random(1,29)*10);
+	var gettime_1,gettime_l , wcount , userwcount,takelength,speed;
+function Textfun() {
+		var d = new Date();
+		gettime_1 = d.getTime();
+    //document.getElementById("demo").style.backgroundColor = "red";
+    eraseText();
+    var take = document.getElementById("maindiv2");
+	take.innerHTML= textarray[trandom] +" " + textarray[trandom1] ;
+		//wcount =  document.getElementById("typearea").value
+
+	    getlength();
+		//document.write(y);
+
+		//getInputValue();
+		 //var inputVal = document.getElementById("maindiv2").value;
+         // var o = take.split(" ").length;
+            // Displaying the value
+           // alert(o);
+}
+ 	
+ 
+
+function getlength()
+{
+var r = document.getElementById('maindiv2');
+		smltarea = document.getElementById ("typearea");
+		smltarea.maxLength = r.innerText.length;
+		//userwcount = str.split(" ").length;
+		//document.write(userwcount);
+		//return userwcount; 
+	// Entertext();
+		//document.write(smltarea.length);
+		/*if(smltarea.innerText.length != r.innerText.length)
+		{
+			p =  document.getElementById("demo");
+			p.style.backgroundColor = "blue";
+			p.innerHTML="Done";
+		}*/
+}
+     
+		function eraseText() {
+    document.getElementById("typearea").value = "";
+    taketime_1 =  new Date();
+   // return taketime_1;
+    //getlength();
+}
+
+function Textfun2()
+{ 
+	var d = new Date();
+	wcount =  document.getElementById("typearea").value;
+    userwcount = wcount.split(" ").length;
+	gettime_l = d.getTime();
+	totaltime = ((gettime_l-gettime_1)/1000).toFixed(2);
+	speed = Math.ceil((userwcount/totaltime)*60);
+
+			//alert(totaltime);
+			//alert(userwcount);
+	var sidediv = document.getElementById("h3speed");
+	var timeh3 = document.getElementById("h3time");
+	var h3accuracy = document.getElementById("h3accuracy");
+	var wish = document.getElementById("wish");
+	var advice = document.getElementById("advice");
+	sidediv.innerHTML = "Speed: " + speed + " WPM" ;
+	wish.innerHTML = "Try one more time to give your best";
+	advice.innerHTML = "Don't give up ";
+	if(totaltime<59.5)
+					timeh3.innerHTML = " Time : "+ totaltime +" s" ; 
+				else
+				{
+					timeh3.innerHTML = " Time : "+ (totaltime/60).toFixed(2) +" m";
+				}
+
+
+		 
+		   var p = document.getElementById("maindiv2").innerHTML;
+		   var q = document.getElementById("typearea").value;
+		   var word1 = p.split(" ");
+		   var word2 = q.split(" ");
+		   var tcount=0;
+		   var fcount = 0;
+		  word1.forEach(function (value,index){
+		   		if(value != word2[index])
+		   		{
+		   			fcount++;
+
+		   		}
+		   		})
+		   word1.forEach(function (value,index){
+		   		if(value == word2[index])
+		   		{
+		   			tcount++;
+		   		}
+		   		})
+	var error = document.getElementById("errorh");
+	var correct = document.getElementById("correcth");
+	var word = document.getElementById("wordh3");
+	  word.innerHTML = " Total Word : " + userwcount;
+	correct.innerHTML = "True Word : " + tcount ;
+	error.innerHTML = "False Word : " + (userwcount-tcount);
+	h3accuracy.innerHTML = "Accuracy: " +(100-(((userwcount-tcount)*100)/userwcount).toFixed(2) )
+}
+
+	 function getInputValue(){
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("maindiv2").value;
+            o = inputVal.split(" ").length;
+            // Displaying the value
+            alert(o);
+        }
+function Entertext() {
+	
+  		storetext = document.getElementById("typearea");
+  		storetext.value+= x;
+  		return storetext.innerText.length;
+  		//document.write(storetext.value);
+  		
+}
+
+
+</script>
+</body>
+
+</html>
+
